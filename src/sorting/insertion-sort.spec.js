@@ -16,7 +16,7 @@ const testCases = [
     [test4, result4],
 ];
 
-fdescribe('insertion sort', () => {
+describe('insertion sort', () => {
     testCases.forEach(([pattern, result], i) => {
         test(`test${++i}: ${JSON.stringify(pattern)}`, () => {
             expect(insertionSort(pattern)).toEqual(result);
