@@ -16,7 +16,7 @@ const testCases = [
     [test4, result4],
 ];
 
-fdescribe('merge two arrays function', () => {
+describe('merge two arrays function', () => {
     test('test1 merge function', () => {
         const leftArr = [2,4];
         const rightArr = [1,3];
@@ -42,8 +42,7 @@ fdescribe('merge two arrays function', () => {
     }) 
 })
 
-fdescribe('merge sort', () => { 
-    
+describe('merge sort', () => { 
     testCases.forEach(([pattern, result], i) => {
         test(`test${++i}: ${JSON.stringify(pattern)}`, () => {
             expect(mergeSort(pattern)).toEqual(result);
